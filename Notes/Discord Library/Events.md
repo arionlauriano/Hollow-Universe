@@ -1,0 +1,15 @@
+```
+on_ready()
+on_message(message)
+on_message_edit(before,after)
+on_message_delete(message)
+on_member_join(member)
+on_member_remove(member)
+on_member_update(before,after)
+on_guild_join(guild)
+on_guild_remove(guild)
+on_reaction_add(reaction, user)
+on_reaction_remove(reaction,user)
+on_raw_message_delete(payload)
+on_command_error(ctx,error)
+```
