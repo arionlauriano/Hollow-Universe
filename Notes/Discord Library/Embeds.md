@@ -1,0 +1,9 @@
+## Features
+- Title
+- URL
+- Description
+- Color
+- Thumbnail
+- Author
+- Fields
+- Footer
