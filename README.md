@@ -1,4 +1,4 @@
 # Hollow Universe
-Desenvolvimento de Apps e Bots para o servidor de The Hollow o RPG.
+Desenvolvimento do bot de discord Ezra para o RPG, The Hollow.
 
-Apps and Bots development for the RPG, The Hollow.
+Discord bot Ezra's development for the RPG The Hollow.
