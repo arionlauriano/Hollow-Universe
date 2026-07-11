@@ -54,6 +54,24 @@ async def embed(interaction:discord.Interaction):
     embed.set_footer(text="This is the footer!")
     embed.set_author(name=interaction.user.name, icon_url=interaction.user.avatar)
     await interaction.response.send_message(embed=embed)
+
+class View(discord.ui.View):
+    @discord.ui.button(label="Click me!", style=discord.ButtonStyle.red, emoji="🔥")
+    async def clickme(self, button, interaction):
+        await button.response.send_message("You've ckicked the button!")
+
+    @discord.ui.button(label="Button 2", style=discord.ButtonStyle.blurple, emoji="🥎")
+    async def button2(self, button, interaction):
+        await button.response.send_message("This is the second button!")
+
+    @discord.ui.button(label="Button 3", style=discord.ButtonStyle.green, emoji="⚾")
+    async def threebutton(self, button, interaction):
+        await button.response.send_message("This is the third button!")
+
+@client.tree.command(name="button", description="Displaying a button", guild=GUILD_ID)
+async def myButton(interaction: discord.Interaction):
+    await interaction.response.send_message(view=View())
+
 # Busca o token do bot em confidentials.py
 Token = confidentials.BotToken
 client.run(Token)
